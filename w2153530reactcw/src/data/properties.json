@@ -1,35 +1,185 @@
 {
-	"properties": [
-        {
-            "id":"prop1",
-			"type":"House",
-            "bedrooms":3,
-			"price":750000,
-			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
-			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-			"picture":"images/prop1pic1small.jpg",
-			"url":"properties/prop1.html",
-            "added": {
-                "month":"October",
-                "day":12,
-                "year":2022
-            }
-        },
-		{
-            "id":"prop2",
-			"type":"Flat",
-            "bedrooms":2,
-			"price":399995,
-			"tenure":"Freehold",
-			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
-            "added": {
-                "month":"September",
-                "day":14,
-                "year":2022
-            }
-        }
-]}
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 850000,
+      "tenure": "Freehold",
+      "postcode": "BR1",
+      "shortDescription": "Stunning 4 bedroom detached family home in Bromley with spacious garden",
+      "longDescription": "This exceptional four-bedroom detached house offers generous living accommodation across two floors. The property features a bright and airy living room with bay windows, a modern fitted kitchen with integrated appliances, and a separate dining room perfect for entertaining. Upstairs, you'll find four well-proportioned bedrooms including a master suite with en-suite bathroom. The property benefits from a landscaped rear garden, driveway parking, and a detached garage. Located in a sought-after residential area, close to excellent schools, local amenities, and transport links to Central London.",
+      "dateAdded": "2024-11-15",
+      "location": {
+        "address": "42 Parkside Avenue",
+        "city": "Bromley",
+        "coordinates": { "lat": 51.4039, "lng": 0.0198 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800"
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 425000,
+      "tenure": "Leasehold",
+      "postcode": "NW1",
+      "shortDescription": "Modern 2 bedroom apartment in Camden with stunning city views",
+      "longDescription": "A stylish two-bedroom apartment situated on the 8th floor of a prestigious development in the heart of Camden. This contemporary home features floor-to-ceiling windows offering panoramic views of the London skyline. The open-plan living area seamlessly connects to a sleek kitchen with premium finishes and high-end appliances. Both bedrooms are generously sized with built-in wardrobes, and the master benefits from an en-suite shower room. Additional features include a family bathroom, secure underground parking, and access to residents' facilities including a gym and concierge service.",
+      "dateAdded": "2024-12-01",
+      "location": {
+        "address": "The Tower, 15 Camden Road",
+        "city": "London",
+        "coordinates": { "lat": 51.5391, "lng": -0.1426 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800"
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 550000,
+      "tenure": "Freehold",
+      "postcode": "SW19",
+      "shortDescription": "Charming 3 bedroom Victorian terrace in Wimbledon with period features",
+      "longDescription": "A beautifully presented three-bedroom Victorian terraced house located in a quiet tree-lined street in Wimbledon. This characterful home retains many original features including high ceilings, ornate cornicing, and a stunning original fireplace in the reception room. The ground floor comprises a bright through-lounge, modern eat-in kitchen, and a utility room. Upstairs offers three bedrooms and a contemporary family bathroom. The south-facing rear garden is perfect for al fresco dining. Within walking distance of Wimbledon Village, excellent schools, and the famous tennis grounds.",
+      "dateAdded": "2024-10-20",
+      "location": {
+        "address": "78 Victoria Gardens",
+        "city": "London",
+        "coordinates": { "lat": 51.4219, "lng": -0.2086 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800"
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 275000,
+      "tenure": "Leasehold",
+      "postcode": "E14",
+      "shortDescription": "Stylish 1 bedroom flat in Canary Wharf with river views",
+      "longDescription": "An immaculate one-bedroom apartment in a sought-after riverside development in Canary Wharf. This modern home offers an open-plan living space with large windows showcasing spectacular views of the Thames. The contemporary kitchen features integrated appliances and a breakfast bar. The bedroom is a good double with floor-to-ceiling wardrobes. The development offers excellent amenities including 24-hour concierge, gym, and landscaped communal gardens. Perfectly positioned for the financial district, with Canary Wharf station just a 5-minute walk away.",
+      "dateAdded": "2025-01-02",
+      "location": {
+        "address": "Riverside Tower, 22 Westferry Road",
+        "city": "London",
+        "coordinates": { "lat": 51.5054, "lng": -0.0235 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800"
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1200000,
+      "tenure": "Freehold",
+      "postcode": "KT2",
+      "shortDescription": "Impressive 5 bedroom family home in Kingston with swimming pool",
+      "longDescription": "An exceptional five-bedroom detached family residence set within mature landscaped grounds in prestigious Kingston upon Thames. This substantial property spans approximately 3,500 sq ft and features a grand entrance hall, formal reception room, family room, and a stunning open-plan kitchen/dining room with bi-fold doors to the garden. The first floor houses five bedrooms including a luxurious master suite with dressing room and en-suite. Outside, the property boasts a heated swimming pool, entertaining terrace, and beautifully maintained gardens. Triple garage and ample driveway parking complete this outstanding home.",
+      "dateAdded": "2024-09-10",
+      "location": {
+        "address": "The Manor House, 5 Richmond Road",
+        "city": "Kingston upon Thames",
+        "coordinates": { "lat": 51.4123, "lng": -0.3007 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800",
+        "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800"
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 650000,
+      "tenure": "Leasehold",
+      "postcode": "W2",
+      "shortDescription": "Luxury 3 bedroom penthouse in Paddington with roof terrace",
+      "longDescription": "A stunning three-bedroom penthouse apartment occupying the entire top floor of an elegant period building in Paddington. This exceptional home features a magnificent open-plan reception room with original ceiling height and three Juliet balconies. The bespoke kitchen showcases premium appliances and marble worktops. All three bedrooms are doubles, with the master enjoying an en-suite bathroom and direct access to the private roof terrace offering breathtaking views across London. Additional features include underfloor heating, air conditioning, and secure allocated parking.",
+      "dateAdded": "2024-11-28",
+      "location": {
+        "address": "Georgian House, 89 Sussex Gardens",
+        "city": "London",
+        "coordinates": { "lat": 51.5154, "lng": -0.1755 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800"
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 375000,
+      "tenure": "Freehold",
+      "postcode": "CR0",
+      "shortDescription": "Cozy 2 bedroom cottage in Croydon with private garden",
+      "longDescription": "A delightful two-bedroom cottage situated in a peaceful cul-de-sac in Croydon. This charming home combines traditional character with modern updates. The ground floor offers a cozy living room with feature fireplace, a contemporary kitchen with dining area, and a useful utility room. Upstairs provides two good-sized bedrooms and a modern bathroom. The private rear garden is wonderfully secluded with a patio area, lawn, and mature shrubs. Benefits from off-street parking. Conveniently located near local shops, parks, and East Croydon station with fast links to London.",
+      "dateAdded": "2024-12-15",
+      "location": {
+        "address": "Rose Cottage, 12 Garden Lane",
+        "city": "Croydon",
+        "coordinates": { "lat": 51.3762, "lng": -0.0982 }
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=800",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b25ba?w=800",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800"
+    }
+  ]
+}
