@@ -44,6 +44,7 @@ function FavouritesPanel({
   // drag favourite item for removal
   const handleFavouriteDragStart = useCallback((e, property) => {
     e.dataTransfer.setData('text/plain', property.id);
+    e.dataTransfer.setData('application/x-favourite', property.id);
     e.dataTransfer.effectAllowed = 'move';
     e.currentTarget.classList.add('favourite-item--dragging');
   }, []);
@@ -66,13 +67,19 @@ function FavouritesPanel({
 
   const handleRemoveZoneDrop = useCallback((e) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsRemoveZoneDragOver(false);
     
-    const propertyId = e.dataTransfer.getData('text/plain');
-    if (propertyId) {
+    // Try to get the property ID from either data type
+    let propertyId = e.dataTransfer.getData('application/x-favourite');
+    if (!propertyId) {
+      propertyId = e.dataTransfer.getData('text/plain');
+    }
+    
+    if (propertyId && favourites.some(f => f.id === propertyId)) {
       onRemove(propertyId);
     }
-  }, [onRemove]);
+  }, [onRemove, favourites]);
 
   return (
     <aside
@@ -83,13 +90,13 @@ function FavouritesPanel({
       aria-label="Favourite properties"
     >
       <div className="favourites-panel__header">
-        <h2 className="favourites-panel__title">
-          ❤️ Favourites
+        <div className="favourites-panel__title-row">
+          <h2 className="favourites-panel__title">Favourites Bar</h2>
           <span className="favourites-panel__count">{favourites.length}</span>
-        </h2>
+        </div>
         {favourites.length > 0 && (
           <button
-            className="btn btn--danger btn--small"
+            className="favourites-panel__clear-btn"
             onClick={onClear}
             aria-label="Clear all favourites"
           >
@@ -101,7 +108,6 @@ function FavouritesPanel({
       {/* show empty message or list */}
       {favourites.length === 0 ? (
         <div className="favourites-panel__empty">
-          <div className="favourites-panel__empty-icon">💝</div>
           <p>Drag properties here or click the heart to save your favourites</p>
         </div>
       ) : (
@@ -152,11 +158,24 @@ function FavouritesPanel({
           {/* drag here to remove */}
           <div
             className={`remove-zone ${isRemoveZoneDragOver ? 'remove-zone--active' : ''}`}
-            onDragOver={handleRemoveZoneDragOver}
-            onDragLeave={handleRemoveZoneDragLeave}
+            onDragOver={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleRemoveZoneDragOver(e);
+            }}
+            onDragEnter={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setIsRemoveZoneDragOver(true);
+            }}
+            onDragLeave={(e) => {
+              e.preventDefault();
+              handleRemoveZoneDragLeave();
+            }}
             onDrop={handleRemoveZoneDrop}
           >
-            🗑️ Drag here to remove
+            <span className="remove-zone__icon">🗑️</span>
+            <span>Drag here to remove</span>
           </div>
         </>
       )}
