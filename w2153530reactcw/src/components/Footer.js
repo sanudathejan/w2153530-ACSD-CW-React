@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__content">
         <p className="footer__text">
-          © {currentYear} EstateAgent Pro - Advanced Client-Side Web Development
+          © {currentYear} PropertyFinder - Advanced Client-Side Web Development
         </p>
         <p className="footer__text">
           University of Westminster - 5COSC026W Coursework
