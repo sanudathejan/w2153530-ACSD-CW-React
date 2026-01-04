@@ -1,0 +1,74 @@
+/* 
+ * SearchPage Styles
+ * Main page with search form and property results
+ */
+
+/* Page Layout with Sidebar */
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.page-layout__main {
+  min-width: 0;
+}
+
+.page-layout__sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+/* Results Section */
+.results-section {
+  margin-top: var(--spacing-xl);
+}
+
+.results-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.results-section__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--gray-800);
+}
+
+.results-section__count {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--gray-500);
+}
+
+.no-results__icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.no-results__title {
+  font-size: 1.5rem;
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-layout__sidebar {
+    position: static;
+    order: -1;
+  }
+}
