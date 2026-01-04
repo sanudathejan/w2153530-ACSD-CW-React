@@ -70,7 +70,7 @@ describe('App Component', () => {
     render(<App />);
     
     // Check header renders with logo
-    expect(screen.getByText('EstateAgent Pro')).toBeInTheDocument();
+    expect(screen.getByText('PropertyFinder')).toBeInTheDocument();
     
     // Check search section title
     expect(screen.getByText('Find Your Perfect Property')).toBeInTheDocument();
