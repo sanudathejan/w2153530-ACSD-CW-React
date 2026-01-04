@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import SearchForm from '../components/SearchForm';
 import PropertyCard from '../components/PropertyCard';
-import FavouritesPanel from '../components/FavouritePanel';
+import FavouritesPanel from '../components/FavouritePanel'; //  File is FavouritePanel.js (singular)
 
 // Function to filter properties based on search criteria
 export const searchProperties = (properties, criteria) => {
