@@ -154,7 +154,7 @@ function SearchForm({ onSearch, onReset }) {
             onBlur={handleBlur}
             aria-label="Minimum price"
           >
-            <option value="">Min Price</option>
+            <option value="">Min</option>
             {priceOptions.slice(1).map((price) => (
               <option key={`min-${price.value}`} value={price.value}>
                 {price.label}
@@ -170,7 +170,7 @@ function SearchForm({ onSearch, onReset }) {
             onBlur={handleBlur}
             aria-label="Maximum price"
           >
-            <option value="">Max Price</option>
+            <option value="">Max</option>
             {priceOptions.slice(1).map((price) => (
               <option key={`max-${price.value}`} value={price.value}>
                 {price.label}
@@ -193,7 +193,7 @@ function SearchForm({ onSearch, onReset }) {
             onBlur={handleBlur}
             aria-label="Minimum bedrooms"
           >
-            <option value="">Min Beds</option>
+            <option value="">Min</option>
             {bedroomOptions.slice(1).map((bed) => (
               <option key={`min-${bed.value}`} value={bed.value}>
                 {bed.label}
@@ -209,7 +209,7 @@ function SearchForm({ onSearch, onReset }) {
             onBlur={handleBlur}
             aria-label="Maximum bedrooms"
           >
-            <option value="">Max Beds</option>
+            <option value="">Max</option>
             {bedroomOptions.slice(1).map((bed) => (
               <option key={`max-${bed.value}`} value={bed.value}>
                 {bed.label}
