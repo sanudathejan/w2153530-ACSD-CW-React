@@ -1,0 +1,134 @@
+/* 
+ * PropertyPage Styles
+ * Full property details page
+ */
+
+.property-details {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.property-details__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.property-details__back:hover {
+  color: var(--primary-dark);
+}
+
+/* Property Info Section */
+.property-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.property-info__main {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.property-info__header {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.property-info__price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.property-info__address {
+  font-size: 1.25rem;
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-md);
+}
+
+.property-info__highlights {
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.property-info__highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--gray-600);
+  font-size: 1rem;
+}
+
+.property-info__highlight-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Property Sidebar */
+.property-sidebar {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  height: fit-content;
+}
+
+.property-sidebar__agent {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.property-sidebar__agent-name {
+  font-weight: bold;
+  color: var(--gray-800);
+  margin-bottom: var(--spacing-xs);
+}
+
+.property-sidebar__agent-role {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+}
+
+.property-sidebar__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .property-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 834px) {
+  .property-info__price {
+    font-size: 1.5rem;
+  }
+  
+  .property-info__address {
+    font-size: 1rem;
+  }
+  
+  .property-info__highlights {
+    gap: var(--spacing-md);
+  }
+}
