@@ -1,65 +1,64 @@
-# w2153530-ACSD-CW-React
-🧑‍💻 5COSC026W – Advanced Client-Side Web Development Coursework
-📌 Overview
+# EstateAgent Pro
 
-This project is a React-based Single Page Application (SPA) developed for the 5COSC026W Advanced Client-Side Web Development module at the University of Westminster.
-The application simulates an estate agent platform 🏠 similar to Rightmove and runs fully on the client side without using a server.
+A property search website built with React for the Advanced Client-Side Web Development module (5COSC026W) at University of Westminster.
 
-✨ Features
+## What it does
 
-🔍 Property search by type, price, bedrooms, date added, and postcode area
+- Search for properties by type, price, bedrooms, date added, and postcode
+- View property details with image gallery, floor plan, and map
+- Save favourite properties using drag and drop or clicking the heart button
+- Responsive design that works on desktop, tablet, and mobile
 
-🧩 Supports multiple search criteria at the same time
+## How to run
 
-🖼️ Property results displayed with image, description, and price
-
-📄 Individual property pages with image gallery and tabbed content
-
-⭐ Add and remove properties from favourites (button & drag-and-drop)
-
-❤️ Favourites list displayed on the search page
-
-📱 Responsive layout for large and small screens
-
-🔐 Client-side security measures applied
-
-🧪 Unit testing implemented using JEST
-
-🛠️ Technologies Used
-
-⚛️ React JS
-
-🟨 JavaScript (ES6)
-
-🌐 HTML5
-
-🎨 CSS3
-
-🧪 JEST
-
-🚀 GitHub Pages
-
-📊 Data
-
-📁 Property data stored in a local JSON file
-
-🏘️ Total of 7 properties covering different prices, types, bedrooms, dates, and postcode areas
-
-▶️ Setup & Run
+1. Install dependencies:
+```
 npm install
+```
+
+2. Start the app:
+```
 npm start
+```
 
-🧪 Testing
+3. Open http://localhost:3000 in your browser
+
+## Running tests
+
+```
 npm test
+```
 
-🌍 Deployment
+## Project structure
 
-The application is deployed using GitHub Pages and runs fully in the browser.
+```
+src/
+├── App.js              - Main component, handles pages and favourites
+├── App.css             - All the styles
+├── components/
+│   ├── Header.js       - Top navigation bar
+│   ├── Footer.js       - Bottom footer
+│   ├── SearchForm.js   - Search filters form
+│   ├── PropertyCard.js - Property card in grid
+│   ├── FavouritesPanel.js - Favourites sidebar
+│   ├── PropertyTabs.js - Tabs for description/floorplan/map
+│   └── ImageGallery.js - Image viewer with lightbox
+├── pages/
+│   ├── SearchPage.js   - Main search page
+│   └── PropertyPage.js - Property details page
+└── data/
+    └── properties.json - Property data
+```
 
-📝 Notes
+## Features
 
-❌ No server-side code is used
+- **Search**: Filter properties by multiple criteria
+- **Favourites**: Drag and drop to add, drag to bin to remove
+- **Responsive**: Works on all screen sizes
+- **Accessible**: Keyboard navigation and screen reader support
 
-🚫 No external templates were used
+## Built with
 
-🗑️ node_modules removed before submission as required
+- React 19
+- Create React App
+- Jest for testing
