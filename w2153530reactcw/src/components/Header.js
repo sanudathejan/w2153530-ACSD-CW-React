@@ -15,8 +15,7 @@ function Header({ currentView, onNavigateHome }) {
           onKeyPress={(e) => e.key === 'Enter' && onNavigateHome()}
           aria-label="Go to home page"
         >
-          <span className="header__logo-icon" role="img" aria-label="house">🏠</span>
-          <span>EstateAgent Pro</span>
+          <span>PropertyFinder</span>
         </div>
 
         {/* Nav links */}
