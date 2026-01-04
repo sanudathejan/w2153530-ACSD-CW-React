@@ -1,0 +1,198 @@
+/* 
+ * FavouritePanel Component Styles
+ * Shows saved favourite properties with drag and drop support
+ */
+
+.favourites-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  min-height: 400px;
+  border: 2px dashed var(--gray-300);
+  transition: all var(--transition-fast);
+}
+
+.favourites-panel--drag-over {
+  border-color: var(--accent-color);
+  background-color: rgba(249, 115, 22, 0.05);
+}
+
+.favourites-panel__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.favourites-panel__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.favourites-panel__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.favourites-panel__count {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+  color: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.favourites-panel__clear-btn {
+  background: linear-gradient(135deg, var(--accent-error) 0%, #c53030 100%);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.favourites-panel__clear-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.favourites-panel__empty {
+  text-align: center;
+  color: var(--gray-400);
+  padding: var(--spacing-xl);
+}
+
+.favourites-panel__empty-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.favourites-panel__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Favourite Item */
+.favourite-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  cursor: grab;
+  transition: all var(--transition-fast);
+}
+
+.favourite-item:hover {
+  background: var(--gray-100);
+}
+
+.favourite-item--dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.favourite-item__image {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.favourite-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.favourite-item__price {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 0.875rem;
+}
+
+.favourite-item__title {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favourite-item__remove {
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  font-size: 1.25rem;
+  padding: var(--spacing-xs);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  align-self: center;
+}
+
+.favourite-item__remove:hover {
+  color: var(--accent-error);
+}
+
+/* Remove Zone */
+.remove-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  border: 2px dashed var(--gray-300);
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--gray-400);
+  margin-top: var(--spacing-lg);
+  transition: all var(--transition-fast);
+  font-size: 0.9rem;
+  background: var(--gray-50);
+}
+
+.remove-zone__icon {
+  font-size: 1.2rem;
+}
+
+.remove-zone--active {
+  border-color: var(--accent-error);
+  border-style: solid;
+  background-color: rgba(229, 62, 62, 0.1);
+  color: var(--accent-error);
+  transform: scale(1.02);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 834px) {
+  .favourites-panel {
+    min-height: 200px;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  .favourite-item {
+    padding: var(--spacing-sm);
+  }
+  
+  .favourite-item__image {
+    width: 50px;
+    height: 50px;
+  }
+}
