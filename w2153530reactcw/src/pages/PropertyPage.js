@@ -90,7 +90,7 @@ function PropertyPage({
         {/* Sidebar with Actions */}
         <div className="property-sidebar">
           <div className="property-sidebar__agent">
-            <div className="property-sidebar__agent-name">EstateAgent Pro</div>
+            <div className="property-sidebar__agent-name">PropertyFinder</div>
             <div className="property-sidebar__agent-role">Your Property Experts</div>
           </div>
 
